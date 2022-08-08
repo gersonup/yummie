@@ -1,0 +1,18 @@
+//
+//  DishCategory.swift
+//  Yummie
+//
+//  Created by Felipe Rolvar on 27/06/22.
+//
+
+import Foundation
+
+struct DishCategory: Decodable {
+    let id, name, image: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name = "title"
+        case image
+    }
+}
